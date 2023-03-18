@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizcovid.css">
+    <title>Quiz Covid-19 </title>
+</head>
+<body>
+    <h1> Quiz Covid-19 </h1>
+   <form>
+<div class="container">
+    <section>
+<h2> Question 1 </h2>
+<label> Température (en degrés celsius) </label>
+<input type="number" id="temp">
+    </section>
+<section>
+<h2> Question 2 </h2>
+<h3>Symptômes:</h3>
+    <input type="checkbox" id="sympt">
+    <label for="toux">Toux</label><br>
+    <input type="checkbox" id="sympt">
+    <label for="fatigue">Fatigue</label><br>
+    <input type="checkbox" id="sympt">
+    <label for="maux"> Maux de tête</label>
+    </section>
+<section>
+<h2> Questions 3</h2>
+<label> Avez vous des difficultés respiratoires? </label>
+<select name="respi" id="respi">
+    <option value="1"> Des difficultés légéres </option>
+    <option value="2"> Des difficultés moyennes </option>
+    <option value="3"> Des difficultés intenses </option>
+</select>
+</section>
+ <section>
+<h2> Question 4</h2>
+<label> Avez-vous été en contact avec une personne malade de la Covid-19 dans les derniers jours? </label>
+<select name="contact" id="contact">
+    <option value="1">OUI</option>
+    <option value="2">NON</option>
+</select>
+</section>
+<section>
+<h2> Question 5</h2>
+<label> Avez-vous voyagé dans les derniers jours?</label>
+<select name="contact" id="voyage">
+    <option value="1">OUI</option>
+    <option value="2">NON</option>
+</select>
+</section>
+<br>
+<button type="submit" onclick="vérifier"> Vérifier</button>
+</div>
+</form> 
+</body>
+<script src="quizcovid.js"></script>
+</html>
